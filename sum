@@ -1,0 +1,61 @@
+
+首页
+头部 [左    右]
+div
+tab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+svg转png
+https://www.svgtopng.cn/
+
+
+图片加载不出来问题？
+
+<img
+src={require("../../icon/slp-icon.png").default}
+/>
+导入图片时记得加.default,否则加载不出来
+
+图片居中问题？
+position:"absolute"   top:50%  left:50%  transform:translate(50%,50%)
+
+CSS transform属性允许你旋转，缩放
+常见 transform
+translate平移
+transform: translateX(-50%); 物体向左移动半个身位
+transform: translateY(-50%); 物体向上移动半个身位
+
+rotate 旋转
+   +z对向你 —— +x
+   |
+   +
+   y
+
+一般旋转一圈 就是 rotateZ(0deg) -> rotateZ(360deg)
+
+字体问题？
+fontWeight 400 ==正常大小   700==bord 加粗   1-1000
+fontSize  1 - 7          3正常

@@ -1,0 +1,27 @@
+.head-content{
+    width:100%;
+    height: 40px ;
+    /*为啥设置是最小高度*/
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    background-color: #f2f2f2;
+}
+
+
+.head-content-item-name,
+.head-content-item-icon {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.head-content-item-icon{
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+}
+.head-content-item-name{
+    margin-left: 50px;
+    font-size: 19px;
+    font-weight: 600
+}

@@ -37,16 +37,16 @@ function ProjectTeam({}) {
         <Tabs defaultActiveKey="1">
           <TabPane tab="您的项目" key="1">
             <div>
-              {/*<Tabs defaultActiveKey="1">*/}
-              {/*  <Tabs.TabPane tab="所有" key="1" style={{ height: 200 }}>*/}
-              {/*    <div>*/}
-              {/*      <Table columns={columns} dataSource={dates} />*/}
-              {/*    </div>*/}
-              {/*  </Tabs.TabPane>*/}
-              {/*  <Tabs.TabPane tab="个人" key="2">*/}
-              {/*    Content of Tab Pane 2*/}
-              {/*  </Tabs.TabPane>*/}
-              {/*</Tabs>*/}
+              <Tabs defaultActiveKey="1">
+                <TabPane tab="所有" key="1" style={{ height: 200 }}>
+                  <div>
+                    {/*<Table columns={columns} dataSource={dates} />*/}
+                  </div>
+                </TabPane>
+                <TabPane tab="个人" key="2">
+                  Content of Tab Pane 2
+                </TabPane>
+              </Tabs>
             </div>
           </TabPane>
           <TabPane tab="星标项目" key="2">

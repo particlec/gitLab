@@ -1,20 +1,27 @@
 import "./index.css";
+import { Button } from "antd";
+import DivStyleHead from "./style";
 
 function Head() {
   return (
-    <div className={"head-content"} style={{ position: "relative" }}>
-      <div>
-        <img
-          className={"head-content-item-icon"}
-          src={require("../../icon/slp-icon.png").default}
-          alt={"l"}
-        />
-        <h className={"head-content-item-name"}>GitLab</h>
+    <DivStyleHead>
+      <div className={"head-content-left"}>
+        <img src={require("../../icon/slp-icon.png").default} alt={"l"} />
+        <h1>GitLab</h1>
+        <div className={"head-content-left-first"}>
+          <Button>项目</Button>
+          <Button>群组</Button>
+          <Button>动态</Button>
+          <Button>里程碑</Button>
+          <Button>代码片段</Button>
+        </div>
+        {/*<img />*/}
       </div>
-      <div></div>
-
+      <div className={"head-content-right"}>
+        <Button>test</Button>
+      </div>
       {/*<div style={{ position: "absolute", marginLeft: "100px" }}>测试</div>*/}
-    </div>
+    </DivStyleHead>
   );
 }
 // module.exports=Head;

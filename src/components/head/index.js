@@ -1,5 +1,5 @@
 import "./index.css";
-import { Button } from "antd";
+import { Button, Input } from "antd";
 import DivStyleHead from "./style";
 
 function Head() {
@@ -19,6 +19,13 @@ function Head() {
       </div>
       <div className={"head-content-right"}>
         <Button>test</Button>
+        <Input.Search
+          autoComplete={"off"}
+          style={{ width: 350 }}
+          placeholder="搜索或转到..."
+          // onSearch={keyword => search({ keyword })}
+        />
+        ,
       </div>
       {/*<div style={{ position: "absolute", marginLeft: "100px" }}>测试</div>*/}
     </DivStyleHead>

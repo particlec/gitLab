@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "antd";
 
 const DivStyleHead = styled.div`
   position: relative;
@@ -36,12 +37,20 @@ const DivStyleHead = styled.div`
     margin-left: 115px;
   }
 
+  Button {
+    font-weight: 600;
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    font-size: 14px;
+  }
+
   div.head-content-right {
+    height: 40px;
     right: 0;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

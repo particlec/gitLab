@@ -50,6 +50,15 @@ position: absolute;
 
 position:"absolute"   top:50%  left:50%  transform:translate(50%,50%)
 
+水平垂直居中:
+父组件加：
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
 CSS transform属性允许你旋转，缩放
 常见 transform
 translate平移

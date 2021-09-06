@@ -1,11 +1,27 @@
 import { TabPane, Tabs } from "../../components/Tabs/tabs";
 import React from "react";
 import DivStyleContent from "./style";
+import Table from "../../components/table/table";
 
 function ProjectTeam({}) {
   const dates = [
     {
       name: "language_v4/languagecode/smarthome/home-backend",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend03",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/packages/react-native-ali-link-sdk",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/templates/react-typescript-template",
       type: null,
       update: "两星期前",
     },
@@ -38,10 +54,10 @@ function ProjectTeam({}) {
           <TabPane tab="您的项目" key="1">
             <div>
               <Tabs defaultActiveKey="1">
-                <TabPane tab="所有" key="1" style={{ height: 200 }}>
-                  <div>
-                    {/*<Table columns={columns} dataSource={dates} />*/}
-                  </div>
+                <TabPane tab="所有" key="1">
+                  <Table dataSource={dates} />
+
+                  {/*<Table columns={columns} dataSource={dates} />*/}
                 </TabPane>
                 <TabPane tab="个人" key="2">
                   Content of Tab Pane 2

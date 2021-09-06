@@ -14,6 +14,12 @@ const DivStyleContent = styled.div`
     font-size: 16px;
     border-bottom: 1px solid #e5e5e5;
   }
+  div.content-table {
+    width: 100%;
+    height: 900px;
+    background: aquamarine;
+  }
+
   h1 {
     position: absolute;
     top: 50%;

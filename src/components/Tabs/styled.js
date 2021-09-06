@@ -35,8 +35,7 @@ export const TabContent = styled.div`
   flex: 1;
   height: 100%;
   div {
-    flex-shrink: 0;
-    width: 100%;
-    overflow-y: auto;
+    //flex-shrink: 0;
+    //overflow-y: auto;
   }
 `;

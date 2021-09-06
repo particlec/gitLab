@@ -1,7 +1,6 @@
 import { Layout } from "antd";
 import { Route } from "react-router-dom";
 import Head from "../head";
-import "./layoutA.css";
 
 import styled from "styled-components";
 

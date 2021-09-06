@@ -1,34 +1,14 @@
+仿gitlab项目-技术记录:
 
 首页
 头部 [左    右]
 div
 tab
 
-
-
-
-
-
 flex 相关
 flex: 0 0 auto
 等于
 flex-grow  0 | flex-shrink 0 | flex-basis auto
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 svg转png
@@ -81,3 +61,7 @@ fontSize  1 - 7          3正常
 怎么在react-table行数据中加图标 ？？
 不好改
 自己写一个table 和tabs
+
+
+写一个flex能收缩的网站
+现在不能收缩，是一个静态网站

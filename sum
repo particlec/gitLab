@@ -1,4 +1,5 @@
 仿gitlab项目-技术记录:
+主要是对css方面、布局的加强
 
 首页
 头部 [左    右]
@@ -37,6 +38,19 @@ display: flex;
     align-items: center;
 
 
+flex简单总结：
+flex-direction：
+row 默认值 从左到右
+row-reverse 从右到左
+column  从上到下
+column-reverse 从下到上  reverse 逆转
+
+justify-content 水平位置 center 水平居中      flex-start水平居左
+
+order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0
+
+flex-shrink属性定义了项目的缩小比例，默认为1，0不缩小
+
 
 
 CSS transform属性允许你旋转，缩放
@@ -56,6 +70,7 @@ rotate 旋转
 字体问题？ ？
 fontWeight 400 ==正常大小   700==bord 加粗   1-1000
 fontSize  1 - 7          3正常
+16px正常
 
 
 怎么在react-table行数据中加图标 ？？
@@ -64,4 +79,21 @@ fontSize  1 - 7          3正常
 
 
 写一个flex能收缩的网站
-现在不能收缩，是一个静态网站
+现在不能收缩,是一个静态网站
+-----
+写一个媒体查询网站
+
+
+这个项目的头写的太死了
+
+靠右显示：要让右父的子组件靠右显示
+左父      右父
+需要在右父加上
+margin-left: auto;
+display: flex;
+
+这个还没试验
+flex: 1;
+   text-align: right;
+
+

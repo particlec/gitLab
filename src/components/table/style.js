@@ -20,8 +20,25 @@ const DivStyleContentTable = styled.div`
     height: 50px;
     display: flex;
     //justify-content: center;
-    align-items: center;
+    //align-items: center;
     font-size: 16px;
+    img.icon-lock {
+      width: 9px;
+      height: 11px;
+      margin-left: 15px;
+      margin-top: 8px;
+    }
+  }
+
+  div.content-table-row-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 14px;
+      height: 14px;
+      margin: 10px;
+    }
   }
 
   div.content-table-row-time {
@@ -30,15 +47,6 @@ const DivStyleContentTable = styled.div`
     display: flex;
     justify-content: flex-end;
   }
-
-  //div.icon {
-  //  top: 50%;
-  //  transform: translateY(-50%);
-  //  left: 0;
-  //  position: absolute;
-  //  width: 46px;
-  //  height: 48px;
-  //}
 `;
 
 export default DivStyleContentTable;

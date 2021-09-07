@@ -56,8 +56,6 @@ function ProjectTeam({}) {
               <Tabs defaultActiveKey="1">
                 <TabPane tab="所有" key="1">
                   <Table dataSource={dates} />
-
-                  {/*<Table columns={columns} dataSource={dates} />*/}
                 </TabPane>
                 <TabPane tab="个人" key="2">
                   Content of Tab Pane 2
@@ -71,9 +69,11 @@ function ProjectTeam({}) {
           <TabPane tab="浏览项目" key="3">
             Content of Tab Pane 3
           </TabPane>
+          <div style={{}}>test</div>
         </Tabs>
       </div>
     </DivStyleContent>
   );
 }
+
 export default ProjectTeam;

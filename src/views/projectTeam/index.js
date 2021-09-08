@@ -25,6 +25,66 @@ function ProjectTeam({}) {
       type: null,
       update: "两星期前",
     },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend03",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/packages/react-native-ali-link-sdk",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/templates/react-typescript-template",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend03",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/packages/react-native-ali-link-sdk",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/templates/react-typescript-template",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "language_v4/languagecode/smarthome/home-backend03",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/packages/react-native-ali-link-sdk",
+      type: null,
+      update: "两星期前",
+    },
+    {
+      name: "https://gitlab.utcook.com/front_end_common/templates/react-typescript-template",
+      type: null,
+      update: "两星期前",
+    },
   ];
 
   const columns = [
@@ -69,7 +129,8 @@ function ProjectTeam({}) {
           <TabPane tab="浏览项目" key="3">
             Content of Tab Pane 3
           </TabPane>
-          <div style={{}}>test</div>
+
+          {/*<div style={{ marginLeft: "auto" }}>test</div>*/}
         </Tabs>
       </div>
     </DivStyleContent>

@@ -4,8 +4,6 @@ const DivStyleContentTable = styled.div`
   width: 100%;
   height: 900px;
   position: relative;
-  //background: aquamarine;
-  //display:inline-block
   div.content-table-row {
     margin: 10px 28px;
     width: 100%;
@@ -19,8 +17,6 @@ const DivStyleContentTable = styled.div`
     width: 800px;
     height: 50px;
     display: flex;
-    //justify-content: center;
-    //align-items: center;
     font-size: 16px;
     img.icon-lock {
       width: 9px;

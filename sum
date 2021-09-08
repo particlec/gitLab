@@ -10,6 +10,16 @@ flex 相关
 flex: 0 0 auto
 等于
 flex-grow  0 | flex-shrink 0 | flex-basis auto
+flex-grow 瓜分剩余空间的、假设父组件 有三个子组件  剩余空间为180 ，他们的flex=grow 分别为 0 1 2 ，他们瓜分 0  120 60 空间分别加在自己原本空间中
+
+
+flex-shrink：
+父组件500
+6个子组件 全部 100   超出100
+设置 flex-shrink 分别为 1 1 1 1 2 2
+
+其收缩量为    (100/100+100+100+100+200+200)*100 =12.5
+第一个组件宽度  100-12.5
 
 
 svg转png
@@ -95,5 +105,34 @@ display: flex;
 这个还没试验
 flex: 1;
    text-align: right;
+
+最终挑战：媒体查询使用
+
+媒体查询：
+
+div.head-content-right {
+    margin-left: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    span.ant-input-group-wrapper {
+      @media (min-width: 1001px) {
+        width: 190px;
+      }
+
+      @media (max-width: 1000px) {
+        display:none;
+      }
+    }
+  }
+
+媒体查询+flex
+一般是3档 0-576   576-992  992-xxxx
+
+       576         992
+
+总屏幕：
+界面缩小后，表格上下 padding 变宽
 
 

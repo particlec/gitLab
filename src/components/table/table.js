@@ -1,6 +1,6 @@
 import DivStyleContentTable from "./style";
 import ColorIcon from "../../utils/colorIcon";
-import { Tag } from "antd";
+import { Spin, Tag } from "antd";
 
 function Table({ dataSource }) {
   console.log(dataSource);
@@ -10,6 +10,7 @@ function Table({ dataSource }) {
         console.log(item);
         return (
           <div className={"content-table-row"} key={number}>
+            <Spin />
             <ColorIcon item={item} />
             <div className={"content-table-row-font"}>
               <p>{item?.name ? item?.name : null}</p>

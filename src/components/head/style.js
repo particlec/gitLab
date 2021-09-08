@@ -40,6 +40,16 @@ const DivStyleHead = styled.div`
     height: 40px;
     display: flex;
     align-items: center;
+
+    span.ant-input-group-wrapper {
+      @media (min-width: 751px) {
+        width: 190px;
+      }
+
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
   }
 `;
 

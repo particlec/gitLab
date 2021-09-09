@@ -112,16 +112,14 @@ function ProjectTeam({}) {
       <div>
         <Tabs defaultActiveKey="1">
           <TabPane tab="您的项目" key="1">
-            <div>
-              <Tabs defaultActiveKey="1">
-                <TabPane tab="所有" key="1">
-                  <Table dataSource={dates} />
-                </TabPane>
-                <TabPane tab="个人" key="2">
-                  Content of Tab Pane 2
-                </TabPane>
-              </Tabs>
-            </div>
+            <Tabs defaultActiveKey="1">
+              <TabPane tab="所有" key="1">
+                <Table dataSource={dates} />
+              </TabPane>
+              <TabPane tab="个人" key="2">
+                Content of Tab Pane 2
+              </TabPane>
+            </Tabs>
           </TabPane>
           <TabPane tab="星标项目" key="2">
             Content of Tab Pane 2

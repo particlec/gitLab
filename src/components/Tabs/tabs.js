@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TabBar, TabContent, TabBarItem } from "./styled";
 
 function TabPane(props) {
-  return <div>{props.children}</div>;
+  return props.children;
 }
 
 function Tabs(props) {
@@ -14,7 +14,7 @@ function Tabs(props) {
   };
 
   return (
-    <div>
+    <>
       <TabBar>
         {React.Children.map(props.children, (element, index) => {
           let { disabled, tab } = element.props;
@@ -45,7 +45,7 @@ function Tabs(props) {
           );
         })}
       </TabContent>
-    </div>
+    </>
   );
 }
 

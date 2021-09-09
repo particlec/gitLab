@@ -5,7 +5,7 @@ const DivStyleContentTable = styled.div`
   height: 900px;
   position: relative;
   div.content-table-row {
-    margin: 10px 28px;
+    padding: 10px 28px;
     width: 100%;
     height: 81px;
     display: flex;
@@ -13,8 +13,8 @@ const DivStyleContentTable = styled.div`
     align-items: center;
   }
   div.content-table-row-font {
+    flex: 1 0 55%;
     margin-left: 20px;
-    width: 800px;
     height: 50px;
     display: flex;
     font-size: 16px;
@@ -26,22 +26,33 @@ const DivStyleContentTable = styled.div`
     }
   }
 
-  div.content-table-row-icon {
+  div.content-table-row-right {
+    flex: 1 0 35%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      width: 14px;
-      height: 14px;
-      margin: 10px;
+    div.content-table-row-icon {
+      @media (max-width: 1079px) {
+        display: none;
+      }
+      justify-content: flex-start;
+      flex: 1 1 40%;
+      display: flex;
+      align-items: center;
+      img {
+        width: 14px;
+        height: 14px;
+        margin: 10px;
+      }
     }
-  }
 
-  div.content-table-row-time {
-    width: 400px;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    div.content-table-row-time {
+      @media (max-width: 992px) {
+        display: none;
+      }
+      flex: 1 1 40%;
+      justify-content: flex-end;
+      margin-left: auto;
+      display: flex;
+    }
   }
 `;
 

@@ -31,8 +31,8 @@ export const TabBarItem = styled(Button)`
 
 export const TabContent = styled.div`
   background: #fff;
-  display: flex;
-  flex: 1;
+  width: 100%;
+  //flex: 1;
   height: 100%;
   div {
     //flex-shrink: 0;

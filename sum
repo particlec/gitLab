@@ -135,4 +135,8 @@ div.head-content-right {
 总屏幕：
 界面缩小后，表格上下 padding 变宽
 
+盒子有时候会撑出，使用padding ,不要使用margin
+
+
+
 

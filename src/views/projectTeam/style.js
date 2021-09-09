@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 const DivStyleContent = styled.div`
   background: #ffff;
   padding: 0 15px;
@@ -26,9 +25,6 @@ const DivStyleContent = styled.div`
     transform: translateY(-50%);
     font-weight: 700;
   }
-  //
-  //td.ant-table-cell:first-child {
-  //}
 `;
 
 export default DivStyleContent;

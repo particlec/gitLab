@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const ColorIconStyle = styled.div`
+  flex-shrink: 0;
   border-radius: 10%;
   width: 48px;
   height: 48px;
   background: ${(props) => props.className};
-
   display: flex;
   justify-content: center;
   align-items: center;

@@ -12,6 +12,7 @@ function Tabs(props) {
     if (typeof props.onChange === "function") props.onChange(activeKey);
     setCurrentIndex(activeKey);
   };
+  const onChanges = () => {};
 
   return (
     <>

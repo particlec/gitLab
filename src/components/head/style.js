@@ -41,6 +41,10 @@ const DivStyleHead = styled.div`
     display: flex;
     align-items: center;
 
+    @media (max-width: 700px) {
+      display: none;
+    }
+
     span.ant-input-group-wrapper {
       @media (min-width: 751px) {
         width: 190px;

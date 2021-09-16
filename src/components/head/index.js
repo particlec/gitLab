@@ -44,6 +44,21 @@ function Head() {
     </Menu>
   );
 
+  function bigNumberAdd(string1, string2) {
+    let temporaryArr1 = string1.split(""), //  字符串转数组 '123'=['1','2','3']
+      temporaryArr2 = string2.split(""),
+      flag = 0,
+      temporaryNumber,
+      min = Math.max(temporaryArr1.length, temporaryArr2.length),
+      sum = "";
+    for (let a = 0; a <= min; a++) {
+      temporaryNumber = ~~temporaryArr1.pop() + ~~temporaryArr2.pop() + flag;
+      sum = (temporaryNumber % 10) + sum;
+      temporaryNumber > 10 || temporaryNumber === 10 ? (flag = 1) : (flag = 0);
+    }
+    return sum;
+  }
+
   return (
     <DivStyleHead>
       <div className={"head-content-left"}>
@@ -55,6 +70,13 @@ function Head() {
           <Button>动态</Button>
           <Button>里程碑</Button>
           <Button>代码片段</Button>
+          <Button
+            onClick={() => {
+              console.log(bigNumberAdd("99", "2"));
+            }}
+          >
+            开发测试专用
+          </Button>
           <img
             style={{
               width: "19px",

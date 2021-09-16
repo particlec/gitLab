@@ -138,5 +138,30 @@ div.head-content-right {
 盒子有时候会撑出，使用padding ,不要使用margin
 
 
+React 顶层 API部分使用？
+为什么用React.Children.map(props.children, () => )而不是props.children.map(() => )
+props.children.props.children[0] 打印报错
+props.children.props打印出3种结果
+
+0914
+JSX 与 React.createElement
+props.children
+React.Children 区别？
+
+
+执行 yarn start发生了什么
+
+
+由于脚手架 自动创建项目后,把 webpack自动包装,所以直接操作webpack十分困难
+1.eject 把webpack暴露出来,不建议,此过程不可逆,暴露出来了,本来由脚手架自动维护的版本,需要自己维护
+2.craco   "start": "react-scripts start", (本来的)
+  +    "start": "craco start",
+  yarn add @craco/craco
+3.rewire   "start": "react-scripts start", (本来的)
+  +     "start": "react-app-rewired start",
+
+//   为什么要操作webpack?
+// 本次要将生产环境的 console.log 全部删除
+
 
 

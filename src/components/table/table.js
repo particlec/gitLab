@@ -3,11 +3,9 @@ import ColorIcon from "../../utils/colorIcon";
 import { Spin, Tag } from "antd";
 
 function Table({ dataSource }) {
-  console.log(dataSource);
   return (
     <DivStyleContentTable>
       {dataSource.map((item, number) => {
-        console.log(item);
         return (
           <div className={"content-table-row"} key={number}>
             {/*<Spin />*/}

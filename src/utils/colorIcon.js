@@ -7,6 +7,13 @@ function ColorIcon({ item }) {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
 
+  其实;
+  Math.round();
+
+  const randomNumber = (min, max) => {
+    return ma;
+  };
+
   const randomColor = () => {
     return data[randomNumber(0, 5)];
   };

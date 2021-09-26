@@ -12,6 +12,7 @@ const ColorIconStyle = styled.div`
   p.p2 {
     margin-top: 13px;
     font-size: 18px;
+    
   }
 `;
 

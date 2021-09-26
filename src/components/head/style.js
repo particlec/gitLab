@@ -40,6 +40,7 @@ const DivStyleHead = styled.div`
     height: 40px;
     display: flex;
     align-items: center;
+    
 
     @media (max-width: 700px) {
       display: none;

@@ -1,9 +1,36 @@
 import { TabPane, Tabs } from "../../components/Tabs/tabs";
-import React from "react";
+import React, {useEffect,useState} from "react";
 import DivStyleContent from "./style";
 import Table from "../../components/table/table";
+import {renderIntoDocument} from "react-dom/test-utils";
+import TablePageNumber from "../../components/tablePageNumber";
+import AnalogQuery from "../../analogData/analogQuery";
 
 function ProjectTeam({}) {
+
+  const [params,setParams]=useState({
+    page: 1,
+    size: 10,
+  });
+
+  useEffect(()=>{
+
+    AnalogQuery({ ...params, map:["name","type","update"] }).then(res=>{
+
+    })
+
+
+
+  },[])
+
+
+
+
+
+
+
+
+
   const dates = [
     {
       name: "language_v4/languagecode/smarthome/home-backend",
@@ -108,11 +135,12 @@ function ProjectTeam({}) {
     <DivStyleContent>
       <div className={"content-title"}>
         <h1>项目</h1>
+        <TablePageNumber/>
       </div>
-      <div>
-        <Tabs defaultActiveKey="1">
+      <div >
+        <Tabs defaultActiveKey="1"  id={"justTest"}>
           <TabPane tab="您的项目" key="1">
-            <Tabs defaultActiveKey="1">
+            <Tabs >
               <TabPane tab="所有" key="1">
                 <Table dataSource={dates} />
               </TabPane>

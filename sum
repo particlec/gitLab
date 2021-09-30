@@ -31,7 +31,11 @@ https://www.svgtopng.cn/
 <img
 src={require("../../icon/slp-icon.png").default}
 />
+因为file-loader包版本不同 ，有的要加default，有的不要加
 导入图片时记得加.default,否则加载不出来
+
+
+
 
 图片居中问题？
 垂直居中：
@@ -231,6 +235,24 @@ react-脚手架-  core操作webpack
       }
 
     );
+
+
+0929: 怎么不用react框架 写一个表的分页？
+
+可以从接口得到的：    当前页数 、总页数、 分页数（没给就写默认）
+
+数据绑定 useState
+
+前端界面
+
+测试可以使用之前写的模拟分页的函数
+
+后续的
+1、之前的tabs 自己重写
+2、react-useState-是如何绑定相应的fiber节点的
+
+ 为啥要加这个
+ &.active,
 
 
 

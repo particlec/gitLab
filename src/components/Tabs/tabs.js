@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TabBar, TabContent, TabBarItem } from "./styled";
 
 function TabPane(props) {
+    console.log(document.getElementById('root')._reactRootContainer._internalRoot.current)
   return props.children;
 }
 
@@ -12,7 +13,8 @@ function Tabs(props) {
     if (typeof props.onChange === "function") props.onChange(activeKey);
     setCurrentIndex(activeKey);
   };
-  const onChanges = () => {};
+
+
 
   return (
     <>

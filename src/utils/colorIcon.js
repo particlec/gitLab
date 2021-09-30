@@ -17,6 +17,13 @@ function ColorIcon({ item }) {
 
   return (
     <ColorIconStyle className={randomColor()}>
+
+
+
+
+
+
+
       <p className={"p2"}>{cutOutString()}</p>
     </ColorIconStyle>
   );

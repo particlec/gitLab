@@ -38,7 +38,7 @@ src={require("../../icon/slp-icon.png").default}
 
 
 图片居中问题？
-垂直居中：
+垂直居中：ssss🔥
 position: absolute;
     top: 50%;
     transform: translateY(-50%);
